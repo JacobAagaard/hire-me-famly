@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  padding: 1rem;
+}
+
+.daily-greeting {
+  font-size: large;
+}
+
+.summary {
+  position: sticky;
+  top: 2rem;
+  background-color: white;
+  padding: .5rem;
+}
+
+.greeting-container {
+  display: flex;
+  justify-content: stretch;
+  padding: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(25rem, 1fr));
+  align-items: center;
+  justify-self: center;
+    
+  > * {
+      padding: 2.5rem;
+      margin: .75rem;
+      border: 1px solid grey;
+      justify-items: center;
+      border-radius: .5rem;
+  }
+}
+
+.child-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+
+.child-image {
+  border-radius: 1rem;
+}
+
+button, input {
+  background-color: aliceblue;
+  border: 2px solid blueviolet;
+  padding: .5rem 1rem;
+}
+
+.pickup-container {
+  display: flex;
+  gap: .5rem;
+  min-height: 2.5rem;
+}
